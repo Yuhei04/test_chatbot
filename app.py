@@ -141,7 +141,7 @@ def yolo_camera():
 
 if __name__ == "__main__":
     # Flaskアプリケーションを別スレッドで実行
-    threading.Thread(target=lambda: app.run(port=5000, use_reloader=False)).start()
+    threading.Thread(target=lambda: app.run(port=10000, use_reloader=False)).start()
 
     # YOLOカメラ処理をメインスレッドで実行
     yolo_camera()
